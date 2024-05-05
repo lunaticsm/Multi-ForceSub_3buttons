@@ -87,11 +87,11 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
     [
-        InlineKeyboardButton("𝖣𝖾𝗏𝖾𝗅𝗈𝗉𝖾𝗋", url="https://t.me/Its_Tartaglia_Childe"),
+        InlineKeyboardButton("Developer", url="https://t.me/xuta_x"),
     ],
     [
-                    InlineKeyboardButton("⚠️ About Me Dude ⚠️", callback_data = "about"),
-                    InlineKeyboardButton("✌️ OFF ✌️", callback_data = "close")
+                    InlineKeyboardButton("About me", callback_data = "about"),
+                    InlineKeyboardButton("Tutup", callback_data = "close")
         
     ]
             ]
@@ -125,11 +125,11 @@ REPLY_ERROR = "<code>Use this command as a reply to any telegram message without
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="💞 ᴍᴀɪɴ ᴄʜᴀɴᴇʟ 💞", url=client.invitelink),
-            InlineKeyboardButton(text="💞 ꜱᴇᴄᴏɴᴅ ᴄʜᴀɴᴇʟ 💞", url=client.invitelink2),
+            InlineKeyboardButton(text="Channel 1", url=client.invitelink),
+            InlineKeyboardButton(text="Channel 2", url=client.invitelink2),
         ],
         [
-            InlineKeyboardButton(text="💞 ɢʀᴏᴜᴘ ᴄʜᴀᴛ 💞", url=client.invitelink3),
+            InlineKeyboardButton(text="Channel 3", url=client.invitelink3),
         ]
     ]
     try:
